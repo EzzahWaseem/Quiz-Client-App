@@ -1,9 +1,8 @@
 import axios from 'axios'
 
-// const url = 'https://react-quizzer-ezzah.herokuapp.com/posts';
-// const userUrl = 'https://react-quizzer-ezzah.herokuapp.com/user';
-const url = 'http://localhost:5000/posts';
-const userUrl = 'http://localhost:5000/user';
+const url = 'https://react-quizzer-ezzah.herokuapp.com/posts';
+const userUrl = 'https://react-quizzer-ezzah.herokuapp.com/user';
+
 export const fetchLists = () => axios.get(url);
 export const createList = (newPost) => axios.post(url, newPost);
 export const updateList = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
