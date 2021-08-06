@@ -129,7 +129,7 @@ export default function MiniDrawer({ setLoginUser }) {
   const handleClose = () => {
     setAnchorEl(null);
     setLoginUser({})
-    history.push("/login")
+    history.push("/")
   };
 
   const handleDrawerClose = () => {
@@ -185,7 +185,7 @@ export default function MiniDrawer({ setLoginUser }) {
                   open={openE}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose}><a href="https://elated-varahamihira-f46efa.netlify.app">Logout</a></MenuItem>
+                  <MenuItem onClick={handleClose}><a href="/">Logout</a></MenuItem>
                 </Menu>
               </div>
             )}
